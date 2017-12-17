@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="@string/one"
+        app:layout_constraintBottom_toTopOf="@+id/four"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/two"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="@string/two"
+        app:layout_constraintBottom_toTopOf="@+id/five"
+        app:layout_constraintLeft_toRightOf="@id/one"
+        app:layout_constraintRight_toLeftOf="@+id/three"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/three"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="@string/three"
+        app:layout_constraintBottom_toTopOf="@+id/six"
+        app:layout_constraintLeft_toRightOf="@+id/two"
+        app:layout_constraintRight_toLeftOf="@+id/plus"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/plus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/plus"
+        app:layout_constraintBottom_toTopOf="@+id/minus"
+        app:layout_constraintLeft_toRightOf="@id/three"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/four"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="@string/four"
+        app:layout_constraintBottom_toTopOf="@+id/seven"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/five"
+        app:layout_constraintTop_toBottomOf="@+id/one"
+        />
+
+    <TextView
+        android:id="@+id/five"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="@string/five"
+        app:layout_constraintBottom_toTopOf="@+id/eight"
+        app:layout_constraintLeft_toRightOf="@+id/four"
+        app:layout_constraintRight_toLeftOf="@+id/six"
+        app:layout_constraintTop_toBottomOf="@+id/two"
+        />
+
+    <TextView
+        android:id="@+id/six"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="@string/six"
+        app:layout_constraintBottom_toTopOf="@+id/nine"
+        app:layout_constraintLeft_toRightOf="@+id/five"
+        app:layout_constraintRight_toLeftOf="@+id/minus"
+        app:layout_constraintTop_toBottomOf="@+id/three"
+        />
+
+    <TextView
+        android:id="@+id/minus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/minus"
+        app:layout_constraintBottom_toTopOf="@+id/equal"
+        app:layout_constraintLeft_toRightOf="@+id/six"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plus"
+        />
+
+    <TextView
+        android:id="@+id/seven"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="@string/seven"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/eight"
+        app:layout_constraintTop_toBottomOf="@+id/four"
+        />
+
+    <TextView
+        android:id="@+id/eight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="@string/eight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/seven"
+        app:layout_constraintRight_toLeftOf="@+id/nine"
+        app:layout_constraintTop_toBottomOf="@+id/five"
+        />
+
+    <TextView
+        android:id="@+id/nine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="@string/nine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/eight"
+        app:layout_constraintRight_toLeftOf="@+id/equal"
+        app:layout_constraintTop_toBottomOf="@+id/six"
+        />
+
+    <TextView
+        android:id="@+id/equal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/equal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/nine"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minus"
+        />
+</android.support.constraint.ConstraintLayout>
